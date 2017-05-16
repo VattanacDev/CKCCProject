@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/lay_detailinfo"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="@color/cardview_shadow_end_color"
+        android:layout_width="384dp"
+        android:layout_height="100dp">
+
+        <LinearLayout
+
+            android:layout_width="100dp"
+            android:layout_height="100dp">
+
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_android"
+                android:layout_width="70dp"
+                android:layout_height="70dp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="284dp"
+            android:layout_height="100dp">
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/txt_name"
+                android:text="Name:Kalamete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="Phone:01233344555"
+                android:layout_below="@id/txt_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:background="#7887"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            android:text="
+NavigationView navigationView=(NavigationView) findViewById..
+ navigationView.setNavigationItemSeletedListener(this);
+
+ drawerLayout=(DrawerLayout)findViewById(R.id.drawer_main);
+
+}
+private void onFeedbackClick()
+{
+  FragmentManager fragmentManager=getFragmentManager();
+  FragmentTransaction  fragmentTransaction=fragmentManger.beginTransaction();
+  FeedbackFragment feedbackFragment=new FeedbackFragment();
+  fragmentTransaction.replace(R.id.lyt_content,feedbackFragment);
+  fragmentTransaction.commit();
+}
+
+private void onNewsClick()
+{
+  FragmentManager fragmentManager=getFragmentManager();
+  FragmentTransaction  fragmentTransaction=fragmentManger.beginTransaction();
+  NewsFragment newsFragment=new NewsFragment();
+  fragmentTransaction.replace(R.id.lyt_content,newsFragment);
+  fragmentTransaction.commit();
+}
+
+private void onTrainingCourseClick()
+{
+  FragmentManager fragmentManager=getFragmentManager();
+  FragmentTransaction  fragmentTransaction=fragmentManger.beginTransaction();
+  TrainingCourseFragment trainingCoursebackFragment=new TrainingCourseFragment();
+  fragmentTransaction.replace(R.id.lyt_content,feedbackFragment);
+  fragmentTransaction.commit();
+
+////2
+
+ getFragmentManager().beginTransaction().replace(R.id.lyt_content,feedbackFragment).commit();
+
+}
+
+"/>
+    </LinearLayout>
+</LinearLayout>
